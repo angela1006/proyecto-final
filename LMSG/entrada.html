@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formula 1</title>
+        <!-- colocamos un favicon-->
+        <link rel="icon" type="image/x-icon" href="img/icon.png">
+        <link rel="stylesheet" href="CSS/entrada.css">
+    </head>
+    <body>
+        <header>
+            <h1>Bienvenido a nuestra pagina de Formula 1</h1>
+            <!-- crear barra de navegacion -->            
+            <nav>
+                <ul>
+                    <li><a href="F1.html">Inicio</a></li>
+                    <li><a href="escuderia.html">Escuderias</a></li>
+                    <li><a href="pilotos.html">Pilotos</a></li>
+                    <li><a href="circuitos.html">Circuitos</a></li>
+                    <li><a href="clasificacion.html">Clasificacion</a></li>
+                    <li><a href="entrada.html">Entradas</a></li>
+            </nav>
+        </header>
+        <main>
+        <section id="entrada">
+            <h3>Comprar entradas</h3>
+            <!-- creacion de formulario-->
+        <form class="formulario">
+            <h3>Datos personales</h3>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Su nombre" required>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="nombre@servidor.com" required>
+    
+            <label for="presupuesto">Presupuesto (en €):</label>
+            <input type="number" id="presupuesto" name="presupuesto" value="1000" min="0">
+    
+            <label>Tipo de entrada:</label>
+            <div class="radios">
+                <label><input type="radio" name="estado" value="Básica" checked> Básica</label>
+                <label><input type="radio" name="estado" value="Experiencia"> Experiencia en circuito </label>
+                <label><input type="radio" name="estado" value="Paddock"> Paddock</label>
+                <label><input type="radio" name="estado" value="VIP"> VIP</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        </section>
+    </main>
+</body>
+</html>

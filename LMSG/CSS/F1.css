@@ -1,0 +1,191 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0; /* Fondo*/
+    color: #000; /* Texto*/
+}
+
+/* Título*/
+h1 {
+    color: red; /* Títulos*/
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #add8e6; /* fondo */
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; 
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d3d3d3; 
+}
+/*navegacion*/
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sección principal */
+#Inicio {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(rgba(216, 216, 216, 0.8), rgba(255, 255, 255, 0.8)), 
+                url("img/fondo.jpg") no-repeat center center; /* Ruta imagen */
+    background-size: cover; /* imagen cubra todo el área */
+    background-color: #eaeaea; /* por si la imagen no se carga */
+    position: relative;
+}
+
+
+/* Subtítulos */
+h2, h3 {
+    color: red;
+    text-align: center; /* Centrado */
+    margin-bottom: 10px;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Centrar el video de YouTube */
+iframe {
+    display: block; /* Convierte el iframe en un bloque */
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 auto 10px; /* Centrado horizontalmente */
+    max-width: 500px; /* Asegura que no se desborde en pantallas pequeñas */
+    height: 250px; /*proporción del video */
+}
+
+
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+    section#Escuderias ul li {
+        padding: 15px; /* Ajustar el padding en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    section#escuderias.html ul li {
+        padding: 10px; /* Ajustar el padding en pantallas muy pequeñas */
+    }
+}
+
+
+
+
+
+/* Estilos generales del footer */
+footer {
+    background: linear-gradient(135deg, #0d1b2a, #1b2631); 
+    color: #ffffff; 
+    padding: 40px 20px; 
+    font-family: 'Arial', sans-serif;
+}
+footer img { 
+    margin-bottom: 10px; 
+    width: 50px; /* Ajusta el tamaño */ 
+    height: auto; /* Mantiene la proporción del SVG */
+}
+
+/* Contenido del footer */
+.footer-content {
+    display: flex; 
+    justify-content: space-between; /* Espacio entre secciones */
+    flex-wrap: wrap; 
+}
+
+/* Secciones del footer */
+.footer-section {
+    flex: 1; /* Cada sección ocupa el mismo espacio */
+    margin: 20px; /* Margen entre secciones */
+    min-width: 200px; /* Ancho secciones */
+}
+
+.footer-section h2 {
+    color: #e10600; 
+    border-bottom: 2px solid #e10600; 
+    padding-bottom: 10px; 
+}
+
+.footer-section p {
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Estilos para la lista de enlaces */
+.footer-section ul {
+    list-style: none; /* Eliminar puntos de la lista */
+    padding: 0; /* Eliminar padding */
+}
+
+.footer-section ul li {
+    margin: 10px 0; /* Espacio entre elementos de la lista */
+}
+
+.footer-section ul li a {
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.footer-section ul li a:hover {
+    color: #e10600; /* Cambiar color al pasar el mouse */
+}
+
+/* Estilos para la parte inferior del footer */
+.footer-bottom {
+    text-align: center; 
+    padding: 20px 0; 
+    border-top: 1px solid #ffffff;
+    margin-top: 20px; 
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+}
+
+/* Estilos para los enlaces sociales */
+.socials {
+    margin-top: 10px; /* Espacio encima de los enlaces sociales */
+}
+
+.socials a {
+    color: #ffffff; 
+    margin: 0 15px; /* Espacio entre enlaces */
+    text-decoration: none; 
+    font-size: 18px; 
+    transition: color 0.3s; 
+}
+
+.socials a:hover {
+    color: #e10600; 
+}

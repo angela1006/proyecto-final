@@ -1,0 +1,162 @@
+/* Configuración global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0; /* Fondo */
+    color: #000; /* Texto */
+}
+
+/* Título */
+h1 {
+    color: red; /* Títulos */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #add8e6; /* Fondo */
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; 
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d3d3d3; 
+}
+
+/* Navegación */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Subtítulos */
+h2, h3 {
+    color: red;
+    text-align: center; /* Centrado */
+    margin-bottom: 10px;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Estilo del formulario */
+.formulario {
+    background-color: #e9edf4;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(121, 120, 120, 0.1);
+}
+
+.formulario h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea,
+.formulario input[type="number"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario textarea {
+    height: 60px;
+    resize: none;
+}
+
+.tipo {
+    display: flex; /* Alinear los botones */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+/* Estilo para las etiquetas */
+.tipo label {
+    background-color: #e0e0e0; 
+    color: #333; 
+    padding: 10px 20px; /* Espacio interno */
+    border-radius: 5px; 
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.formulario .radios {
+    margin-bottom: 15px;
+}
+
+.formulario .radios label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.formulario input[type="radio"] {
+    margin-right: 5px;
+}
+
+.formulario button {
+    background-color: #2b579a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario button:hover {
+    background-color: #24467d;
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .formulario {
+        width: 100%; /* Ajustar ancho */
+        padding: 15px; /* Reducir padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        width: 100%; /* Ancho completo */
+        padding: 10px; /* Padding más pequeño */
+    }
+}

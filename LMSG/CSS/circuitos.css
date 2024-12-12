@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0; /* Fondo*/
+    color: #000; /* Texto*/
+}
+
+/* Título*/
+h1 {
+    color: red; /* Títulos*/
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #add8e6; /* fondo */
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; 
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d3d3d3; 
+}
+/*navegacion*/
+html {
+    scroll-behavior: smooth;
+}
+/* Subtítulos */
+h2, h3 {
+    color: red;
+    text-align: center; /* Centrado */
+    margin-bottom: 10px;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+/* Estilo general para la sección de circuitos */
+section#circuitos{
+    padding: 40px 20px;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Estilo para el título de la sección */
+section#circuitos  h2 {
+    color: #e10600; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Estilo para la lista ordenada */
+ol {
+    padding-left: 20px; /* Espacio a la izquierda */
+}
+
+/* Estilo para cada circuito */
+ol > li {
+    margin-bottom: 20px; /* Espacio entre circuitos */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    color: #093463; 
+}
+
+/* Estilo para las sublistas de pilotos */
+ol > li > ul {
+    color: #060608;
+    list-style: none; /* Eliminar puntos de la lista */
+    padding: 0; /* Eliminar padding */
+    margin-top: 10px; /* Espacio superior */
+}
+
+/* Estilo para cada piloto en la sublista */
+ol > li > ul > li {
+    background-color: #fcf8f8; 
+    border: 1px solid #929191;
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 5px; /* Espacio entre pilotos */
+    transition: transform 0.3s; /* Transición  */
+}
+
+/* Efecto hover en los pilotos */
+ol > li > ul > li:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el cursor */
+}
+
+/* Estilo para el mapa */
+.map-responsive {
+    display: flex; /* centrado */
+    justify-content: center; /* Centrar horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+}
+/*contenedor para el mapa*/
+
+.map-responsive iframe {
+    width: 100%; /* Ancho completo */
+    max-width: 600px; /* Ancho máximo */
+    height: 400px; /* Altura fija */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra  */
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+    section#Escuderias ul li {
+        padding: 15px; /* Ajustar el padding en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    section#escuderias.html ul li {
+        padding: 10px; /* Ajustar el padding en pantallas muy pequeñas */
+    }
+}

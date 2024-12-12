@@ -1,0 +1,125 @@
+/* Configuración global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0; /* Fondo */
+    color: #000; /* Texto */
+}
+
+/* Títulos */
+h1 {
+    color: red; /* Color del título principal */
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: red; /* Color del subtítulo */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navegación */
+nav {
+    background-color: #add8e6; /* Fondo */
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre elementos */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; 
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d3d3d3; /* Efecto hover */
+}
+
+/* Contenedor de video */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tarjetas de pilotos */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #000;
+}
+
+/* Efecto hover en tarjetas */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 90%; /* Tarjetas más anchas en pantallas pequeñas */
+    }
+}

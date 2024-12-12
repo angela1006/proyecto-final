@@ -1,0 +1,142 @@
+/* Configuración global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0; /* Fondo */
+    color: #000; /* Texto */
+}
+
+/* Título */
+h1 {
+    color: red; /* Títulos */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #add8e6; /* Fondo */
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; 
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d3d3d3; 
+}
+
+/* Navegación */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Subtítulos */
+h2, h3 {
+    color: red;
+    text-align: center; /* Centrado */
+    margin-bottom: 10px;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Sección de escuderías */
+section#escuderias {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(95, 95, 95, 0.1);
+    margin: 20px;
+}
+
+/* Estilo para el título principal */
+section#escuderias h2 {
+    color: #e10600; /* Rojo F1 */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Estilo para los subtítulos */
+section#escuderias h3 {
+    color: #0d1b2a; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+/* Estilo para los párrafos */
+section#escuderias p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333; 
+}
+
+/* Estilo para la lista de escuderías */
+section#escuderias ul {
+    list-style: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Eliminar padding */
+}
+
+/* Estilo para cada escudería */
+section#escuderias ul li {
+    background-color: #ffffff; 
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 10px 0; /* Espacio entre tarjetas */
+    box-shadow: 0 2px 5px rgba(56, 56, 56, 0.1); /* Sombra */
+}
+
+/* Estilo para los nombres de las escuderías */
+section#escuderias ul li strong {
+    display: block; /* Nombre ocupa línea completa */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    color: #0d1b2a; /* Color azul oscuro */
+    margin-bottom: 10px; /* Espacio debajo del nombre */
+}
+
+/* Estilo para los párrafos dentro de cada escudería */
+section#escuderias ul li p {
+    margin: 0; /* Eliminar margen */
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    color: #555; 
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+    section#escuderias ul li {
+        padding: 15px; /* Ajustar el padding en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    section#escuderias ul li {
+        padding: 10px; /* Ajustar el padding en pantallas muy pequeñas */
+    }
+}
