@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF3E3; /* Color de fondo general */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formulario-container {
+    text-align: center;
+}
+
+form {
+    font-size: 14px; /* Tamaño de fuente */
+    color: #333333; /* Color de texto principal */
+    background-color: #F4F6FA; /* Color de fondo del formulario */
+    border: 1px solid #E3E4E6; /* Borde sólido */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 400px; /* Ancho fijo del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+fieldset {
+    border: 1px solid #B8BFCB; /* Borde punteado gris */
+    border-radius: 6px; /* Radio del borde */
+    margin-bottom: 15px; /* Margen inferior */
+    padding: 0 15px; /* Espaciado interno */
+}
+
+legend {
+    color: grey; /* Color del texto */
+    font-size: 13px; /* Tamaño de letra */
+    margin-bottom: 8px; /* Margen inferior */
+    padding: 0 5px; /* Espaciado interno del texto */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+input, textarea {
+    background-color: white; /* Fondo blanco */
+    border-radius: 4px; /* Bordes redondeados */
+    color: #264F96; /* Color del texto */
+    font-size: 14px; /* Tamaño de fuente */
+    padding: 6px 10px; /* Espaciado interno */
+    width: calc(100% - 22px); /* Ajuste al tamaño del contenedor */
+    border: 1px solid #ccc;
+    outline: none; /* Sin resalte */
+}
+
+textarea {
+    width: 100%; /* Ajusta al 100% del contenedor */
+    height: 60px; /* Altura inicial */
+    max-width: 100%; /* Sin exceder el contenedor */
+    min-height: 50px; /* Altura mínima */
+}
+
+input:required, textarea:required {
+    border-color: #4AA248; /* Borde para campos requeridos */
+    box-shadow: 0 0 3px #4AA248; /* Sombra verde */
+}
+
+input:invalid, textarea:invalid {
+    border-color: #FF7F7F; /* Borde para campos inválidos */
+    box-shadow: 0 0 3px #FF7F7F; /* Sombra roja */
+}
+
+button {
+    padding: 8px 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    background-color: #2A477A; /* Fondo del botón */
+    font-size: 14px; /* Tamaño de fuente */
+    border: none;
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5376B2; /* Color al pasar el mouse */
+}

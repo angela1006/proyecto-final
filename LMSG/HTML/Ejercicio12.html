@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Estilizado</title>
+    <link rel="stylesheet" href="CSS12.css">
+</head>
+<body>
+    <div class="formulario-container">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Su nombre" required>
+                
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="nombre@servidor.com" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del proyecto</legend>
+                <label for="descripcion">Breve descripción del proyecto:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+                
+                <label>Estado actual del proyecto:</label>
+                <div class="estado">
+                    <input type="radio" id="planteamiento" name="estado" value="planteamiento" checked>
+                    <label for="planteamiento">En planteamiento</label>
+
+                    <input type="radio" id="planificacion" name="estado" value="planificacion">
+                    <label for="planificacion">En planificación</label>
+
+                    <input type="radio" id="ejecucion" name="estado" value="ejecucion">
+                    <label for="ejecucion">En ejecución</label>
+
+                    <input type="radio" id="finalizado" name="estado" value="finalizado">
+                    <label for="finalizado">Ya finalizado</label>
+                </div>
+
+                <label for="presupuesto">Presupuesto aproximado (en €):</label>
+                <input type="number" id="presupuesto" name="presupuesto" value="1000" min="0">
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
