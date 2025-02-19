@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/pokeball.png"> 
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">
+            <img src="img/titulo.png" alt="" class="imagen-titulo">
+        </h1>
+        <input type="text" id="search" placeholder="Buscar Pokémon..." class="search-input">
+        <button id="search-button" class="search-button">
+            <img src="img/lupa.png" alt="Buscar" class="search-icon">
+        </button> 
+    </header>
+
+    <!-- Barra de navegación con tipos -->
+    <nav id="type-filter"></nav>
+
+    <!-- Contenedor donde se mostrarán los Pokémon -->
+    <main id="pokemon-container"></main>
+
+    <script src="script.js"></script>
+</body>
+</html>
